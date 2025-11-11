@@ -2,9 +2,9 @@
 int main()
 {
 	int radius;
-	int area;
+	float area;
 	radius=7;//asign value
 	area=3.142*radius*radius;
-	printf("%d",area);
+	printf("%f",area);
 	return 0;
 }
