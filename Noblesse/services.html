@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<title>PIXELS.co.ke</title>
+
+<head>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon scout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- font awsesome -->
+    <script src="https://kit.fontawesome.com/8ef1de9f50.js" crossorigin="anonymous"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(42, 50, 61);
+            ;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin-right: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, "Algerian", Helvetica, sans-serif;
+        }
+
+        .item {
+            display: flex;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .item img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .item .text {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            background-color: grey;
+            /* border: 2px solid red; */
+        }
+
+        .foot h6 {
+            color: rgb(11, 75, 11);
+            font-size: 20px;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .foot h1 {
+            color: white;
+            margin-left: 20px;
+        }
+
+        .contacts {
+            margin-top: 20px;
+        }
+
+        .contacts i {
+            padding: 10px;
+            /* border: 2px solid red; */
+            color: white;
+            background: darkgray;
+            margin-bottom: 10px;
+            /* gap: 15px; */
+
+        }
+
+        .contacts i a {
+            /* border: 2px solid red; */
+            color: chocolate;
+            text-decoration: none;
+            list-style-type: none;
+            margin-left: 10px;
+            font-size: 20px;
+            /* gap: 15px; */
+        }
+
+        .down {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .down a {
+            margin-right: 100px;
+            color: lightgray;
+            list-style-type: none;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .down a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            font-size: 20px;
+            width: 100vw;
+        }
+
+        .copy {
+            margin-top: 5px;
+            color: lightgray;
+            margin-right: 60px;
+
+        }
+
+        .design h6 {
+            color: chocolate;
+            font-size: 30px;
+        }
+
+        .design h2 {
+            color: white;
+            margin-top: 5px;
+            font-size: 25px;
+            transition: 2s;
+
+        }
+
+        .design h2:hover {
+
+            transform: scale(1.2);
+            color: brown;
+            transition: 2s;
+        }
+
+        .design p {
+            margin-top: 5px;
+
+        }
+
+        .team-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .team-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #dbc7c7;
+        }
+
+        .team-subtitle {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .team-member {
+            text-align: left;
+            position: relative;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .member-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d6c8c8;
+        }
+
+        .member-title {
+            font-size: 16px;
+            color: #bdb6b6;
+            margin-bottom: 10px;
+        }
+
+        .member-description {
+            font-size: 14px;
+            color: #c5bbbb;
+            line-height: 1.5;
+        }
+
+        /* Subtle gradient overlay for visual effect */
+        .team-member::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            opacity: 0.1;
+        }
+
+
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #1a1a1a;
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .submit-btn:hover {
+            background: #333;
+        }
+
+        @media (max-width: 768px) {
+            .form-section {
+                flex-direction: column;
+            }
+
+            .image-side {
+                min-height: 300px;
+            }
+
+            .form-side {
+                padding: 40px 30px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <style>
+            h1 {
+                text-align: center;
+                color: rgb(20, 20, 36);
+                font-size: 40px;
+                background: #2b302d;
+                width: 100%;
+                border: 2px solid #000;
+                border-radius: 5px;
+                padding: 10px;
+                margin: 0;
+                font-family: "Algerian", serif !important;
+            }
+        </style>
+        OUR SERVICES
+    </h1>
+    <p><i>THis is what we offer for our excuisite clients! </i> </p>
+
+    <div class="container">
+        <div class="item">
+            <iframe src="../botique-landingpage-main/index.html" width="100%" height="500px"
+                style="border:none;"></iframe>
+            <div class="design">
+                <!-- <h1>What Iam Great At</h1> -->
+                <marquee direction="right">
+                    <h6>Web Design</h6>
+                </marquee>
+
+                <h2>We create stunning, responsive websites tailored to your brand. From sleek layouts to seamless
+                    navigation, our designs ensure an exceptional user experience.</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../Noblesse/images/nice.jpg" alt="Service 2 Example">
+            <div class="design">
+                <marquee direction="right">
+                    <h6>Graphic Design</h6>
+                </marquee>
+                <h2>Our graphic design services bring your vision to life with logos, banners, and marketing materials
+                    that stand out. We focus on bold visuals and unique aesthetics.</h2>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../Noblesse/images/boom.jpg" alt="Service 3 Example">
+            <div class="design">
+                <marquee direction="right">
+                    <h6>Branding Solutions</h6>
+                </marquee>
+                <h2>Build a strong brand identity with our comprehensive branding packages, including logo design, color
+                    schemes, and business cards.</h2>
+            </div>
+        </div>
+        <section class="team-section">
+            <h1 class="team-title">Meet our team</h1>
+            <p class="team-subtitle">Dedicated professionals driving our style success</p>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="../Noblesse/images/there.jpg" alt="Father_Looks">
+                    <div class="member-name">Father_Looks</div>
+                    <div class="member-title"> CEO OF PIXELS<br>Chief Fashion Officer</div>
+                    <div class="member-description">Father_Looks is the founder and visionary behind our brand. He is
+                        passionate about creating spectacular and beyond expectation websites that our customers will
+                        love.</div>
+                </div>
+                <div class="team-member">
+                    <img src="../Noblesse/images/seek.jpg" alt="Roxanne">
+                    <div class="member-name">Roxanne</div>
+                    <div class="member-title">Chief Fashion Officer</div>
+                    <div class="member-description">Mich has a brand. As ensures t</div>
+                    <!-- Note: Description is cut off in the image, so placeholder -->
+                </div>
+                <div class="team-member">
+                    <img src="../Noblesse/images/flp.jpg" alt="Aline Turner">
+                    <div class="member-name">Alpha_kid_1</div>
+                    <div class="member-title">Chief Design Officer</div>
+                    <div class="member-description">Aline is a fashion expert and leads our team of designers and
+                        stylists. She ensures that our collection is always on-trend and of the highest quality.</div>
+                </div>
+                <div class="team-member">
+                    <img src="../Noblesse/images/boom.jpg" alt="Iris Jo">
+                    <div class="member-name">SHL_Empire</div>
+                    <div class="member-title">Chief Financial Officer</div>
+                    <div class="member-description">John, with industry, stay ahead the lates</div>
+                    <!-- Note: Description is cut off in the image, so placeholder -->
+                </div>
+            </div>
+        </section>
+</body>
+<br>
+
+<footer>
+    <div class="foot">
+        <h6>contact us</h6>
+        <h2>Ways To Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Odit reiciendis ea possimus odio, blanditiis
+            quae ipsum culpa <br>sapiente dolore rerum debitis quos suscipit distinctio .</p>
+    </div>
+    <div class="contacts">
+        <div class="text-[#637588]" data-icon="FacebookLogo" data-size="24px" data-weight="regular"> </div>
+        <i class="fa-regular fa-envelope"><a href="#">admin@sammyharrison58@gmail.com</a></i>
+        <i class="fa-solid fa-phone"><a href="#">+(254)748082906</a></i>
+        <i class="fa-solid fa-s"><a href="#">live:shail </a></i> <br>
+        <br> <i class="fa-brands fa-twitter"><a href="#">@Father_Looks</a></i><br>
+        <br> <i class="fa-solid fa-gear"><a href="">Noblesse</a></i>
+    </div>
+    <div class="down">
+        <a href="#">WWW.Father_LooksNewThemes.com</a>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+
+    <div class="copy">
+        <p> &copy;copyright-Father_Looks|All Rights Reserved </p>
+    </div>
+</footer>
+
+</html>
