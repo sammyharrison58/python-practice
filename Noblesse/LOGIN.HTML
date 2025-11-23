@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter & Submit Data</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+
+        button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1669c1;
+        }
+
+        #output {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Enter Your Data</h2>
+        <input type="text" id="userInput" placeholder="Type anything here..." autofocus>
+        <button onclick="submitData()">Submit</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script>
+        // Submit with button
+        function submitData() {
+            const input = document.getElementById('userInput').value.trim();
+            if (input === '') {
+                document.getElementById('output').innerHTML = '<span style="color:red;">Please enter something!</span>';
+            } else {
+                document.getElementById('output').innerHTML =
+                    '  You submitted: <strong>${input}</strong>';
+            }
+        }
+
+        // Also submit when pressing Enter
+        document.getElementById('userInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                submitData();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
