@@ -4,146 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
+    <title>Our Team - BendyPixel</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-        body {
+        * {
             margin: 0;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1e3a5f 0%, #0f1e36 100%);
-            color: #333;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            margin: 20px 0;
-        }
-
-        .header {
-            background: #f8f9fa;
-            padding: 40px 50px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0 0 16px 0;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1a1a1a;
-        }
-
-        .header p {
-            margin: 0;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-section {
-            display: flex;
-            flex-direction: row;
-            min-height: 500px;
-        }
-
-        .image-side {
-            flex: 1;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-                url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
-        }
-
-        .form-side {
-            flex: 1;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 14px 16px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border 0.3s ease;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #4a90e2;
-            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fafafa;
+            color: #222;
         }
 
-        textarea {
-            min-height: 140px;
-            resize: vertical;
+        .team-section {
+            padding: 120px 5%;
+            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .submit-btn {
-            background: #1a1a1a;
-            color: white;
-            padding: 14px 32px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
+        .team-pretitle {
+            font-size: 14px;
             font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            align-self: flex-start;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #666;
+            margin-bottom: 12px;
         }
 
-        .submit-btn:hover {
-            background: #333;
+        .team-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #1a1a1a;
         }
 
+        .team-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 70px;
+            font-weight: 500;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            transition: transform 0.4s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-12px);
+        }
+
+        .team-image {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 28px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover .team-image {
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+        }
+
+        .team-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #1a1a1a;
+        }
+
+        .team-role {
+            font-size: 16px;
+            color: #777;
+            font-weight: 500;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .form-section {
-                flex-direction: column;
+            .team-title {
+                font-size: 38px;
             }
 
-            .image-side {
-                min-height: 300px;
+            .team-subtitle {
+                font-size: 17px;
+                margin-bottom: 50px;
             }
 
-            .form-side {
-                padding: 40px 30px;
+            .team-image {
+                height: 380px;
+                border-radius: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-section {
+                padding: 80px 5%;
             }
 
-            .header {
-                padding: 30px 20px;
+            .team-title {
+                font-size: 32px;
             }
 
-            .header h1 {
-                font-size: 2rem;
+            .team-image {
+                height: 340px;
             }
         }
     </style>
@@ -151,32 +128,52 @@
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h1>Send Us Your Feedback</h1>
-            <p>We value your feedback! Your input helps us continually improve our services and ensure we're meeting the
-                evolving needs of our clients. Please share your thoughts and suggestions with us. We appreciate your
-                time and feedback.</p>
-        </div>
+    <section class="team-section">
+        <div class="team-pretitle">Good Work, Good People</div>
+        <h2 class="team-title">Our Professional Team</h2>
+        <p class="team-subtitle">The Minds Behind Your Success</p>
 
-        <div class="form-section">
-            <div class="image-side"></div>
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="https://via.placeholder.com/400x500/00bcd4/ffffff?text=Member+1" alt="Team Member"
+                    class="team-image">
+                <div class="team-name">Alexander Okafor</div>
+                <div class="team-role">Creative Director</div>
+            </div>
 
-            <div class="form-side">
-                <form action="/submit-feedback" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="https://via.placeholder.com/400x500/00bcd4/ffffff?text=Member+2" alt="Team Member"
+                    class="team-image">
+                <div class="team-name">David Chukwu</div>
+                <div class="team-role">Lead Developer</div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="email">Your email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="https://via.placeholder.com/400x500/00bcd4/ffffff?text=Member+3" alt="Team Member"
+                    class="team-image">
+                <div class="team-name">Samuel Adebayo</div>
+                <div class="team-role">UI/UX Designer</div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="https://via.placeholder.com/400x500/00bcd4/ffffff?text=Member+4" alt="Team Member"
+                    class="team-image">
+                <div class="team-name">Emeka Nwosu</div>
+                <div class="team-role">Marketing Manager</div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="team-member">
+                <img src="https://via.placeholder.com/400x500/00bcd4/ffffff?text=Member+5" alt="Team Member"
+                    class="team-image">
+                <div class="team-name">Chinwe Okoro</div>
+                <div class="team-role">Project Manager</div>
 
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
+            </div>
+    </section>
 
-                    <div class="form-group">
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>PIXELS.co.ke</title>
 
 <head>
@@ -15,15 +15,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: rgb(42, 50, 61);
-            ;
+
             color: white;
             font-size: 20px;
             text-align: center;
             margin-right: 20px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+        }
+
+        .services-section {
+            padding: 120px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .services-left {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .section-label {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .services-left h2 {
+            font-size: 58px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 32px;
+            color: #1a1a1a;
+        }
+
+        .services-left p {
+            font-size: 18px;
+            color: #555;
+            max-width: 520px;
+        }
+
+        .services-grid {
+            flex: 1.2;
+            min-width: 300px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 24px;
+            background: #e0f7fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: #00bbc9;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .services-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 60px;
+            }
+
+            .services-left h1 {
+                font-size: 48px;
+            }
+
+            .services-left p {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-left h1 {
+                font-size: 42px;
+            }
+
+            .service-card {
+                padding: 30px 20px;
+            }
         }
 
         .container {
@@ -289,6 +409,8 @@
             .header h1 {
                 font-size: 2rem;
             }
+
+
         }
     </style>
 </head>
@@ -309,9 +431,52 @@
                 font-family: "Algerian", serif !important;
             }
         </style>
-        OUR SERVICES
+        OUR SERVICES at Harris Apex.com
     </h1>
     <p><i>THis is what we offer for our excuisite clients! </i> </p>
+
+    <section class="services-section">
+        <!-- Left Side -->
+        <div class="services-left">
+            <div class="section-label">Our Services</div>
+            <h2>We Create Best Digital Products</h2>
+            <p>
+                We create custom digital solutions tailored to your unique business needs.
+                We go beyond websites, focusing on innovative experiences that help you achieve
+                your goals, such as increased brand awareness, online sales, and streamlined processes.
+                Our team works closely with you to build a powerful digital presence that resonates
+                with your audience and delivers measurable results.
+            </p>
+        </div>
+
+        <!-- Right Side - Service Cards -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">✍</div>
+                <h3>UX/UI & GUI Design</h3>
+                <p>Visual Storytelling That Captivates.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🛍</div>
+                <h3>Brand Identity & Data engineering</h3>
+                <p>Crafting Brand Identities That Stand Out.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📧</div>
+                <h3>Data Analysis</h3>
+                <p>Boost Your Online Presence with Expert Data Analysis.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Fast, Secure & Scalable Websites Built for Growth.</p>
+            </div>
+        </div>
+    </section>
+    <br><br>
 
     <div class="container">
         <div class="item">
@@ -328,7 +493,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="../Noblesse/images/nice.jpg" alt="Service 2 Example">
+            <img src="../Noblesse/images/logo.jpg" alt="Service 2 Example">
             <div class="design">
                 <marquee direction="right">
                     <h6>Graphic Design</h6>
@@ -338,7 +503,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="../Noblesse/images/boom.jpg" alt="Service 3 Example">
+            <img src="../Noblesse/images/10.jpg" alt="Service 3 Example">
             <div class="design">
                 <marquee direction="right">
                     <h6>Branding Solutions</h6>
@@ -380,7 +545,13 @@
                     <div class="member-description">John, with industry, stay ahead the lates</div>
                     <!-- Note: Description is cut off in the image, so placeholder -->
                 </div>
-            </div>
+                <div class="team-member">
+                    <img src="../Noblesse/images/9.jpg" alt="Noblesse">
+                    <div class="member-name">Noblesse</div>
+                    <div class="member-title">Chief Marketing Officer</div>
+                    <div class="member-description">Noblesse is responsible for our marketing strategies and brand
+                        awareness. She ensures that our message reaches the right audience effectively.</div>
+                </div>
         </section>
 </body>
 <br>

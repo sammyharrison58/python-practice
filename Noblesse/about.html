@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<title>PIXELS.co.ke</title>
+<html lang="en">
+<title>Harris Apex.co.ke</title>
 
 <head>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -15,6 +15,14 @@
 
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: rgb(24, 27, 27);
             color: rgb(178, 178, 189);
@@ -25,6 +33,109 @@
 
         }
 
+        .team-section1 {
+            padding: 120px 5%;
+            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .team-pretitle1 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .team-title1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .team-subtitle1 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 70px;
+            font-weight: 500;
+        }
+
+        .team-grid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member1 {
+            transition: transform 0.4s ease;
+        }
+
+        .team-member1:hover {
+            transform: translateY(-12px);
+        }
+
+        .team-image1 {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 28px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .team-member1:hover .team-image {
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+        }
+
+        .team-name1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #ece1e1;
+        }
+
+        .team-role1 {
+            font-size: 16px;
+            color: #f7e7e7;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .team-title1 {
+                font-size: 38px;
+            }
+
+            .team-subtitle1 {
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+
+            .team-image1 {
+                height: 380px;
+                border-radius: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-section1 {
+                padding: 80px 5%;
+            }
+
+            .team-title1 {
+                font-size: 32px;
+            }
+
+            .team-image1 {
+                height: 340px;
+            }
+        }
 
 
 
@@ -185,6 +296,80 @@
             background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             opacity: 0.1;
         }
+
+        .mission-section {
+            padding: 100px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .mission-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .mission-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .section-label {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .mission-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .mission-content p {
+            font-size: 18px;
+            color: #555;
+            max-width: 600px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .mission-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 80px 5%;
+                gap: 50px;
+            }
+
+            .mission-content h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .mission-content h1 {
+                font-size: 36px;
+            }
+
+            .mission-content p {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -201,7 +386,7 @@
             font-family: "Algerian", serif !important;
         }
     </style>
-    ABOUT US AT PIXELS.COM
+    ABOUT US AT Harris Apex.com
 </h2>
 
 
@@ -267,19 +452,55 @@
             }
         </style> <I>OUR INFORMATION</I></h3>
     </h4>
-    <p>Pixels is a websites company that offers a wide range of services including even uploading we pages, portrait
+    <p>Harris Apex.com is a websites company that offers a wide range of services including even uploading we pages,
+        portrait
         desighns, product flaires, and photo editing.<br> We are committed to providing high-quality websites that
         capture the essence of our clients' special desighns and help them showcase their products in the best possible
         light.<br> Our team of experienced developers and coders uses state-of-the-art equipment and techniques to
         ensure that every design is perfect.<br> Whether you're looking for a wedding card, a business website, or a
         product launch, Pixels has the expertise and creativity to deliver stunning results.<br> Contact us today to
         learn more about our services and how we can help you preserve your memories through beautiful photography.</p>
-    <center> <br>
-        <div class="image-row">
-            <img src="../Noblesse/images/11.jpg" alt="Father_Looks">
-            <img src="../Noblesse/images/boom.jpg" alt="Roxanne">
-            <img src="../Noblesse/images/there.jpg" alt="Alpha_kid_1">
-        </div>
+    <center>
+        <section class="team-section1">
+            <div class="team-pretitle1">Good Work, Good People</div>
+            <h2 class="team-title1">Our Professional Team</h2>
+            <p class="team-subtitle1">The Minds Behind Your Success</p>
+
+            <div class="team-grid1">
+                <!-- Team Member 1 -->
+                <div class="team-member1">
+                    <img src="../Noblesse/images/12.jpg" alt="Team Member1" class="team-image1">
+                    <div class="team-name1">Father_Looks</div>
+                    <div class="team-role1">Data Analyst</div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member1">
+                    <img src="../Noblesse/images/11.jpg" alt="Team Member1" class="team-image1">
+                    <div class="team-name1">Roxanne</div>
+                    <div class="team-role1">Web Developer</div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member1">
+                    <img src="../Noblesse/images/10.jpg" alt="Team Member1" class="team-image1">
+                    <div class="team-name1">Alpha_kid_1</div>
+                    <div class="team-role1">UI/UX Designer</div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="team-member1">
+                    <img src="../Noblesse/images/7.jpg" alt="Team Member1" class="team-image1">
+                    <div class="team-name1">SHL_Empire</div>
+                    <div class="team-role1">Data engineer</div>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="team-member1">
+                    <img src="../Noblesse/images/9.jpg" alt="Team Member1" class="team-image1">
+                    <div class="team-name1">Noblesse</div>
+                    <div class="team-role1">Market Manager</div>
+
+                </div>
+        </section>
 
         <right>About Us<br>
             Welcome to Harris Apex, where creativity meets innovation! We are a passionate team of food desighns
@@ -292,6 +513,33 @@
             <br>Let’s collaborate to build amazing meals together!
         </right>
 
+        <section class="mission-section">
+            <!-- Left: Image -->
+            <div class="mission-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                    alt="Team putting puzzle pieces together">
+            </div>
+
+            <!-- Right: Text Content -->
+            <div class="mission-content">
+                <div class="section-label">Our Mission</div>
+                <h1>Turn Ideas into Reality</h1>
+                <p>
+                    At Harris Apex, our mission extends beyond simply creating websites, designs,Data analysis and Data
+                    engineering.
+                    We are driven by a deep-seated belief in the transformative power of digital experiences.
+                    We strive to be more than just a service provider; we aim to be a true partner to our clients,
+                    collaborating closely to understand their unique needs and aspirations.
+                    Our goal is to empower businesses and individuals to thrive in the digital world by crafting
+                    innovative solutions that not only meet their immediate needs but also position them for long-term
+                    success.
+                    We believe in building strong, lasting relationships founded on trust, transparency,
+                    and a shared commitment to achieving exceptional results.
+                </p>
+            </div>
+        </section>
+
+        <br><br>
         <section class="team-section">
             <h1 class="team-title">Meet our team</h1>
             <p class="team-subtitle">Dedicated professionals driving our style success</p>
@@ -299,7 +547,7 @@
                 <div class="team-member">
                     <img src="../Noblesse/images/there.jpg" alt="Father_Looks">
                     <div class="member-name">Father_Looks</div>
-                    <div class="member-title"> CEO OF PIXELS<br>Chief Fashion Officer</div>
+                    <div class="member-title"> CEO OF Harris Apex.com<br>Chief Fashion Officer</div>
                     <div class="member-description">Father_Looks is the founder and visionary behind our brand. He is
                         passionate about creating spectacular and beyond expectation websites that our customers will
                         love.</div>
@@ -325,6 +573,14 @@
                     <div class="member-description">John, with industry, stay ahead the lates</div>
                     <!-- Note: Description is cut off in the image, so placeholder -->
                 </div>
+                <center>
+                    <div class="team-member">
+                        <img src="../Noblesse/images/9.jpg" alt="Noblesse">
+                        <div class="member-name">Noblesse</div>
+                        <div class="member-title">Chief Marketing Officer</div>
+                        <div class="member-description">Noblesse is responsible for our marketing strategies and brand
+                            awareness. She ensures that our message reaches the right audience effectively.</div>
+                </center>
             </div>
         </section>
 </body>
