@@ -27,5 +27,130 @@
     </header>
 
 </body>
+<main class="container">
+    <h1>POST A GIG</h1>
+    <p>WOULD YOU LIKE TO POST A GIG?</p>
+    <div class="container">
+        <section class="mt-2">
+            <h2 class="text-center">POST A GIG ?</h2><br>
+            <center> Post Gigs Here !</center>
+            </h2>
+            <p class="text-center">We offer the safest and convinient way to make money.
+            </p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../campus_gig/img/code.jpg" alt="edit">
+                    <p>CODERS</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../campus_gig/img/phone.jpg" alt="edit">
+                    <p>MANUAL</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../campus_gig/img/web.jpg" alt="edit">
+                    <p> TECHNOLOGICAL WORKS </p>
+                </div>
+            </div><br><br>
+            <center>
+                <h1>POST YOUR GIG HERE!</h1>
+            </center>
+            <div
+                style="background: rgb(7, 25, 46); color:white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); max-width: 800px; margin: 2rem auto;">
+                <form action="#" method="POST">
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="fullname" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Full
+                            Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Father Looks" required>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 250px;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email
+                                Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Fatherlooks@example.com" required>
+                        </div>
+                        <div style="flex: 1; min-width: 250px;">
+                            <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Phone
+                                Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+245 748-082-906">
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="fullname" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">
+                                Attach a file:</label>
+                            <input type="text" id="file" name="file" placeholder="FILE" required>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="password"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Create a
+                                Password (A new password):</label>
+                            <input type="password" id="password" name="password" placeholder="********">
+                        </div><br><br><br>
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Preferred Wok ways
+                                :</label>
+                            <div>
+                                <input type="radio" id="online" name="mode" value="online" checked>
+                                <label for="online" style="margin-right: 1rem;">Online</label>
+
+                                <input type="radio" id="hybrid" name="mode" value="hybrid">
+                                <label for="hybrid" style="margin-right: 1rem;">Hybrid</label>
+
+                                <input type="radio" id="onsite" name="mode" value="onsite">
+                                <label for="onsite">On-site Campus</label>
+                            </div>
+                        </div>
+
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Interests:</label>
+                            <div>
+                                <input type="checkbox" id="frontend" name="interests" value="frontend">
+                                <label for="frontend" style="margin-right: 1rem;">Technological Gigs</label>
+
+                                <input type="checkbox" id="backend" name="interests" value="backend">
+                                <label for="backend" style="margin-right: 1rem;">Food Gigs</label>
+
+                                <input type="checkbox" id="design" name="interests" value="design">
+                                <label for="design">Manual gigs</label>
+                            </div>
+                        </div>
+
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="course" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Select
+                                a
+                                work script:</label>
+                            <select id="course" name="course">
+                                <option value="" disabled selected>-- Choose Your best way: --</option>
+                                <option value="web101">WEB101 - Technology gigs</option>
+                                <option value="web102">WEB102 - Food gigs</option>
+                                <option value="web103">WEB103 - Manual gigs</option>
+
+                            </select>
+                        </div>
+
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Message /
+                                Questions:</label>
+                            <textarea id="message" name="message" rows="7"
+                                placeholder="Tell us about your goals..."></textarea>
+                        </div>
+
+
+
+
+                </form>
+            </div>
+            <a href="mailto:sammyharrison58@gmail.com">
+                <center> <button type="submit"
+                        style="background-color: rgb(98, 98, 100); color:rgb(241, 235, 235); font-size:x-large"><b>SUBMIT</b></button>
+            </a>
+            <button type="reset"
+                style="background-color: rgb(70, 70, 73); color:rgb(241, 235, 235); font-size:x-large"><b>RESET</b></button
+                method="clear">
+            </center>
 
 </html>
