@@ -7,6 +7,110 @@
     <link rel="stylesheet" href="style.css">
     <title>Earnings</title>
 </head>
+<style>
+    .faq-nav {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+
+    .faq-nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .faq-nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .faq-nav a:hover {
+        text-decoration: underline;
+    }
+
+    .faq-section {
+        margin-bottom: 3rem;
+        scroll-margin-top: 100px;
+
+    }
+
+    .faq-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border-left: 4px solid var(--primary-color);
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .back-to-top {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #64748b;
+        text-decoration: none;
+    }
+
+    .bar-graph {
+        display: flex;
+        align-items: flex-end;
+        height: 350px;
+        gap: 0.2rem;
+        padding: 0.1rem;
+        border-bottom: 2px solid #cbd5e1;
+        border-left: 2px solid #cbd5e1;
+        margin-top: 2rem;
+        background: white;
+        border-radius: 4px;
+    }
+
+    .bar-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    .bar {
+        width: 20%;
+        background-color: #f7df1e;
+        border-radius: 4px 4px 0 0;
+        transition: height 1s ease-out;
+        position: relative;
+    }
+
+    .bar:hover {
+        opacity: 0.8;
+    }
+
+    .bar-label {
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #64748b;
+    }
+
+    .bar-value {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+</style>
 
 <body>
     <header>
@@ -19,7 +123,7 @@
                 <li><a href="how.html">How it works</a></li>
                 <li><a href="earnings.html">Earnings</a></li>
                 <li><a href="popular.html">Popular Gigs</a></li>
-                <li><a href="tips.html">Safety Tips</a></li>
+                <li><a href="tips.html">FAQS</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -27,5 +131,135 @@
     </header>
 
 </body>
+<h1>Our Earnings</h1>
+<center>
+    <h1>Our earnings are earned in different ways</h1>
+</center>
+<center>
+    <div>
+        <table>
+            <thead>
+                <tr style=background-color:var(--secondary-color);color:var(--white);>
+                    <th>Gig</th>
+                    <th>Price @Hour⏱️</th>
+                    <th>Availability</th>
+                    <th>%total</th>
+                </tr>
+            </thead>
+            <tr style="background-color: beige; color:black">
+                <th>Technological Gigs</th>
+                <th>$200</th>
+                <th>always</th>
+                <th>100</th>
+            </tr>
+            <tr style="background-color: beige;color:black">
+                <th>Manual gigs</th>
+                <th>$150</th>
+                <th>always</th>
+                <th>80</th>
+            </tr>
+            <tr style="background-color: beige;color:black">
+                <th>Delicasies Gigs</th>
+                <th>$190</th>
+                <th>always</th>
+                <th>90</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</center>
+<div id="Technological Gigs" class="faq-section">
+    <h2>technological Gigs</h2>
+    <div class="faq-item">
+        <h3>Here is a simple way in which it comes</h3>
+        <p>The amount of income you earn through our technological gigs depends enterly on how you are capable of
+            convincing our <br>
+            clients that you are the best for their choosing
+        </p>
+
+    </div>
+    <div class="faq-item">
+        <h3>payment </h3>
+        <p>
+            The amount of connections we provide and the amount we display that is to be charged depends on us <br>
+            !Earnings are not less than 100% which is about $200
+
+
+        </p>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+</div>
+<div id="Manual Gigs" class="faq-section">
+    <h2>Manual Gigs</h2>
+    <div class="faq-item">
+        <h3>Here is a simple way in which it comes</h3>
+        <p>The amount of income you earn through our manual gigs depends enterly on how you are capable of
+            convincing our <br>
+            clients that you are the best for their choosing
+        </p>
+
+    </div>
+    <div class="faq-item">
+        <h3>payment </h3>
+        <p>
+            The amount of connections we provide and the amount we display that is to be charged depends on us <br>
+            !Earnings are not less than 50% which is about $150
+
+
+        </p>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+</div>
+<div id="Delicacies Gigs" class="faq-section">
+    <h2>Delicacies Gigs</h2>
+    <div class="faq-item">
+        <h3>Here is a simple way in which it comes</h3>
+        <p>The amount of income you earn through our Delicacies gigs depends enterly on how you are capable of
+            convincing our <br>
+            clients that you are the best for their choosing
+        </p>
+
+    </div>
+    <div class="faq-item">
+        <h3>payment </h3>
+        <p>
+            The amount of connections we provide and the amount we display that is to be charged depends on us <br>
+            !Earnings are not less than 70% which is about $180
+
+
+        </p>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+</div>
+<center>
+    <h2> Latest Earnings Graph</h2>
+</center>
+<div class="bar-graph">
+    <div class="bar-container">
+        <div class="bar" style="height: 90%; background-color:rgb(43, 61, 13)">
+            <span class="bar-value">$200</span>
+        </div>
+        <span class="bar-label">Technological</span>
+    </div>
+    <div class="bar-container">
+        <div class="bar" style="height: 75%; background-color:rgb(96, 105, 11)">
+            <span class="bar-value">$180</span>
+        </div>
+        <span class="bar-label">Manual</span>
+    </div>
+    <div class="bar-container">
+        <div class="bar" style="height: 60%; background-color:rgb(8, 53, 66)">
+            <span class="bar-value">$150</span>
+        </div>
+        <span class="bar-label">Delicacies</span>
+    </div>
+</div>
+</div>
+
+
+
+<footer>
+    <p> &copy;copyright-Father_Looks|All Rights Reserved </p>
+</footer>
 
 </html>

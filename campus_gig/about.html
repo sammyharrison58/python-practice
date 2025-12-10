@@ -7,6 +7,72 @@
     <link rel="stylesheet" href="style.css">
     <title>about</title>
 </head>
+<style>
+    .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .teacher-card {
+        background-color: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .teacher-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .teacher-img {
+        width: 100%;
+        height: 250px;
+        background-color: #cbd5e1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        font-size: 1.2rem;
+    }
+
+    .teacher-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .teacher-name {
+        color: #1e293b;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .teacher-role {
+        color: #2563eb;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-link {
+        color: #94a3b8;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .social-link:hover {
+        color: #2563eb;
+    }
+</style>
 
 <body>
     <header>
@@ -19,7 +85,7 @@
                 <li><a href="how.html">How it works</a></li>
                 <li><a href="earnings.html">Earnings</a></li>
                 <li><a href="popular.html">Popular Gigs</a></li>
-                <li><a href="tips.html">Safety Tips</a></li>
+                <li><a href="tips.html">FAQS</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>

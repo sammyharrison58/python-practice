@@ -111,11 +111,12 @@ h1 {
 }
 
 table {
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     margin: 1rem 0;
     background: var(--white);
     box-shadow: var(--shadow);
+    background-color: white;
 }
 
 th,
@@ -123,11 +124,6 @@ td {
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #e2e8f0;
-}
-
-th {
-    background-color: var(--primary-color);
-    color: var(--white);
 }
 
 input,
