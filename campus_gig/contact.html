@@ -7,6 +7,128 @@
     <link rel="stylesheet" href="style.css">
     <title>contact</title>
 </head>
+<style>
+    .faq-nav {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    .faq-nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .faq-nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .faq-nav a:hover {
+        text-decoration: underline;
+    }
+
+    .faq-section {
+        margin-bottom: 3rem;
+        scroll-margin-top: 100px;
+
+    }
+
+    .faq-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border-left: 4px solid var(--primary-color);
+        border-right: 4px solid var(--primary-color);
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .back-to-top {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #64748b;
+        text-decoration: none;
+    }
+
+    .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .teacher-card {
+        background-color: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .teacher-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .teacher-img {
+        width: 100%;
+        height: 250px;
+        background-color: #cbd5e1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        font-size: 1.2rem;
+    }
+
+    .teacher-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .teacher-name {
+        color: #1e293b;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .teacher-role {
+        color: #2563eb;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-link {
+        color: #94a3b8;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .social-link:hover {
+        color: #2563eb;
+    }
+</style>
 
 <body>
     <header>
@@ -25,7 +147,205 @@
             </ul>
         </nav>
     </header>
+    <h1>Contact Us</h1>
+    <center>
+        <h2>TALK TO US</h2>
+    </center>
+    <div id="Gig posting" class="faq-section">
+
+
+        <div class="faq-item">
+            <h3>You Opinion matters</h3>
+            <p>Talk to us your opinion matters to us<br>
+                Just fill this form below
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>Specific</h3>
+            <p>We are located at:Meru,Along Meru-Maua road<br>
+                Come visit us you are all welcome
+            </p>
+        </div>
+        <center>
+            <h2>JUST FIIL THIS!</h2>
+        </center>
+        <div
+            style="background: rgb(7, 25, 46); color:white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); max-width: 800px; margin: 2rem auto;">
+            <form action="#" method="POST">
+
+                <div class="form-side">
+                    <form action="/submit-feedback" method="post">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input style="color:black;" placeholder="ENTER YOUR NAME" type="text" id="name" name="name"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input style="color:black;" placeholder="ENTER YOUR EMAIL" type="email" id="email"
+                                name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input style="color:black;" placeholder="ENTER YOUR SUBJECT" type="text" id="subject"
+                                name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <textarea style="color:black;" placeholder="ENTER YOUR MESSAGE" id="message" name="message"
+                                rows="9" required></textarea>
+
+
+                        </div>
+                </div>
+                <a href="mailto:sammyharrison58@gmail.com">
+                    <center> <button type="submit"
+                            style="background-color: rgb(98, 98, 100); color:rgb(241, 235, 235); font-size:x-large"><b>SUBMIT</b></button>
+                </a>
+                <button type="reset"
+                    style="background-color: rgb(70, 70, 73); color:rgb(241, 235, 235); font-size:x-large"><b>RESET</b></button
+                    method="clear">
+                </center>
+
+        </div>
+        <div>
+            </form>
+
+        </div>
+        <main class="container">
+            <h1>Meet Our Crew</h1>
+            <p>Reach Us Personally</p>
+
+            <div class="teacher-grid"></div>
+            <div class="teacher-card">
+            </div>
+            <div class="teacher-grid">
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/app.jpg" alt="About Us Image"
+                                style="max-width: 70%; max-height: 80%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Father Looks</div>
+                        <div class="teacher-role">Senior Web Developer</div>
+                        <p>Expert in all Technologicals programs.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0756743219</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/cook.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Feona Karimi</div>
+                        <div class="teacher-role">Food industry manager</div>
+                        <p>10+ years of experience in the food industry.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0733889045</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/phone.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 80%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Isaac Bahatarr</div>
+                        <div class="teacher-role">Manual work</div>
+                        <p>Work experience beyond human comprehension.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0736790734</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/web.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Wayne Jackson</div>
+                        <div class="teacher-role">Finance manager</div>
+                        <p>To know all about to get payed contact me.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0748678909</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/gui.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Joseph .Pin.N</div>
+                        <div class="teacher-role">Our GUI manager</div>
+                        <p>10+ years of experience in the industry.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0706789654</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/wifi.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Derick Abade</div>
+                        <div class="teacher-role">All Wifi installments</div>
+                        <p>10+ years of experience in the wifi industry.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0756743210</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div>
+                        <center> <img src="img/code.jpg" alt="About Us Image"
+                                style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                    </div>
+                    <div class="teacher-info">
+                        <div class="teacher-name">Linus .O</div>
+                        <div class="teacher-role">Code manager</div>
+                        <p>10+ years of experience in the code industry.</p>
+                        <div class="social-links" style="margin-top: 1rem;">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <label>📞:0709872345</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
 
 </body>
+<footer>
+    <p> &copy;copyright-Father_Looks|All Rights Reserved </p>
+</footer>
 
 </html>

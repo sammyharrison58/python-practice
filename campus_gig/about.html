@@ -72,7 +72,64 @@
     .social-link:hover {
         color: #2563eb;
     }
+
+    .faq-nav {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    .faq-nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .faq-nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .faq-nav a:hover {
+        text-decoration: underline;
+    }
+
+    .faq-section {
+        margin-bottom: 3rem;
+        scroll-margin-top: 100px;
+
+    }
+
+    .faq-item {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border-left: 4px solid var(--primary-color);
+        border-right: 4px solid var(--primary-color);
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .back-to-top {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #64748b;
+        text-decoration: none;
+    }
 </style>
+
 
 <body>
     <header>
@@ -91,7 +148,200 @@
             </ul>
         </nav>
     </header>
+    <h1>About Us</h1>
+    <main class="container">
+        <h1>Meet Our Crew</h1>
+        <p>Learn from the best in the industry.</p>
 
+        <div class="teacher-grid"></div>
+        <div class="teacher-card">
+        </div>
+        <div class="teacher-grid">
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/app.jpg" alt="About Us Image"
+                            style="max-width: 70%; max-height: 80%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Father Looks</div>
+                    <div class="teacher-role">Senior Web Developer</div>
+                    <p>Expert in all Technologicals programs.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/cook.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Feona Karimi</div>
+                    <div class="teacher-role">Food industry manager</div>
+                    <p>10+ years of experience in the food industry.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/phone.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 80%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Isaac Bahatarr</div>
+                    <div class="teacher-role">Manual work</div>
+                    <p>Work experience beyond human comprehension.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/web.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Wayne Jackson</div>
+                    <div class="teacher-role">Finance manager</div>
+                    <p>To know all about to get payed contact me.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/gui.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Joseph .Pin.N</div>
+                    <div class="teacher-role">Our GUI manager</div>
+                    <p>10+ years of experience in the industry.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/wifi.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Derick Abade</div>
+                    <div class="teacher-role">All Wifi installments</div>
+                    <p>10+ years of experience in the wifi industry.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <div>
+                    <center> <img src="img/code.jpg" alt="About Us Image"
+                            style="max-width: 40%; max-height: 50%; border-radius: 8px;"></center>
+                </div>
+                <div class="teacher-info">
+                    <div class="teacher-name">Linus .O</div>
+                    <div class="teacher-role">Code manager</div>
+                    <p>10+ years of experience in the code industry.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="Gig posting" class="faq-section">
+
+        <CENTER>
+            <h2 style="font-style: Algerian,serif;">PREFACE</h2>
+        </CENTER>
+
+        <div class="faq-item">
+            <h3>ABOUT OUR COMPANY</h3>
+            <p>A place of brilliant minds full of different services provided by the best of us through our gigs.<br>
+                We mainly established this company for the purpose of business and business only.<br>
+                We sell our Gigs and allow those who are to work with us post their Gigs for our clients.<br>
+                This allows us to cut both sides by providing our clients with the desired services and our partners to
+                gain cash by taking on the Gigs the clients need done!<br><br>
+                ONLY AT CAMPUS GIG!!
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>LOCATION</h3>
+            <p>We are located at:Meru,Along Meru-Maua road<br>
+
+
+            </p>
+        </div>
+        <a href="#" class="back-to-top">↑ Back to Top</a>
+    </div>
+    <center>
+        <main>
+            <div style="margin-top: 4rem;">
+                <h2>Our Working hours</h2>
+                <p>Working</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:00am-10:00am</td>
+                            <td rowspan="1">Manual Always</td>
+                            <td>Food</td>
+                            <td rowspan="1">Clothe</td>
+                            <td>Technological</td>
+                            <td>websites</td>
+                        </tr>
+                        <tr>
+                            <td>11:00am-13:00pm</td>
+                            <td colspan="5" style="text-align: center;">LUNCH BREAK</td>
+                        </tr>
+                        <tr>
+                            <td>13:00pm-14:20pm</td>
+                            <td>Technological</td>
+                            <td rowspan="1">Full projects</td>
+                            <td>Any</td>
+                            <td rowspan="2">Payment</td>
+                            <td>applications</td>
+                        </tr>
+                        <tr>
+                            <td>14:30pm-16:00pm</td>
+                            <td>Accessible</td>
+                            <td colspan="2" style="text-align:center">Break</td>
+                            <td>Portfolio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </center>
 </body>
+<footer>
+    <p> &copy;copyright-Father_Looks|All Rights Reserved </p>
+</footer>
 
 </html>
